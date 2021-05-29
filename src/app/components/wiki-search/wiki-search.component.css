@@ -1,0 +1,25 @@
+.example-form-field {
+  width: 200px;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.col {
+  width: 100%;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.app-toolbar {
+  position: sticky;
+  position: -webkit-sticky; /* For macOS/iOS Safari */
+  top: 0; /* Sets the sticky toolbar to be on top */
+  z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+  min-height: 100px;
+}
