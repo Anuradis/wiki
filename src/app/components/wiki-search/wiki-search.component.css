@@ -1,5 +1,25 @@
+.app-toolbar {
+  display: flex;
+  justify-content: space-evenly;
+  position: sticky;
+  position: -webkit-sticky; /* For macOS/iOS Safari */
+  top: 0; /* Sets the sticky toolbar to be on top */
+  z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+  min-height: 100px;
+}
+.col-inputs {
+
+}
+
+.col-buttons {
+  margin: 10px;
+}
+button {
+  margin: 5px;
+}
 .example-form-field {
   width: 200px;
+  padding: 10px;
 }
 
 .container {
@@ -12,14 +32,18 @@
   width: 100%;
 }
 
-.spacer {
-  flex: 1 1 auto;
+.main-color {
+  color: #FFCC00 ;
+  padding-right: 10px;
 }
 
-.app-toolbar {
-  position: sticky;
-  position: -webkit-sticky; /* For macOS/iOS Safari */
-  top: 0; /* Sets the sticky toolbar to be on top */
-  z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
-  min-height: 100px;
+.searchmatch {
+  background-color: #9C27B0;;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.highlight-replaced {
+  background-color: #FFCC00;
+  font-weight: bold;
 }
