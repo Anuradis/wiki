@@ -5,30 +5,20 @@ import { WikiSearchComponent } from './components/wiki-search/wiki-search.compon
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatIconModule} from '@angular/material/icon';
-import {MatInputModule} from '@angular/material/input';
-import {MatButtonModule} from '@angular/material/button';
-import {MatListModule} from '@angular/material/list';
-import {MatToolbarModule} from '@angular/material/toolbar';
+import {MaterialModule} from './modules/material.module';
+
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    WikiSearchComponent
-  ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatFormFieldModule,
-    MatIconModule,
-    MatIconModule,
-    MatInputModule,
-    MatButtonModule,
-    MatListModule,
-    MatToolbarModule
+    MaterialModule,
+  ],
+  declarations: [
+    AppComponent,
+    WikiSearchComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

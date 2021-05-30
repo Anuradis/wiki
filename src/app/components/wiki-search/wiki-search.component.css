@@ -1,25 +1,49 @@
+.app-toolbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 100px;
+  flex-wrap: wrap;
+}
+.buttons {
+  min-width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 .example-form-field {
   width: 200px;
+  padding: 10px;
 }
 
-.container {
+.results {
   display: flex;
   padding: 20px;
   justify-content: center;
   align-items: center;
 }
+
 .col {
-  width: 100%;
+  width: 80%;
 }
 
-.spacer {
-  flex: 1 1 auto;
+.mat-list-base .mat-list-item{
+  min-height: 46px;
+  height: auto !important;
 }
 
-.app-toolbar {
-  position: sticky;
-  position: -webkit-sticky; /* For macOS/iOS Safari */
-  top: 0; /* Sets the sticky toolbar to be on top */
-  z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
-  min-height: 100px;
+.att-color {
+  color: #FFCC00 ;
+  padding-right: 10px;
+}
+
+.searchmatch {
+  background-color: #9C27B0;;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.highlight-replaced {
+  background-color: #FFCC00;
+  font-weight: bold;
 }
