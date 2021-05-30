@@ -78,6 +78,7 @@ export class WikiSearchComponent implements OnInit {
     this.searchedPhrase = '';
     this.replaceWith = '';
     this.results = [];
+    this.replacedPhraseElements = null;
   }
 
   /**

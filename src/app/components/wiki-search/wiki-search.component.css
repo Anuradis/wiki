@@ -1,38 +1,38 @@
 .app-toolbar {
   display: flex;
   justify-content: space-evenly;
-  position: sticky;
-  position: -webkit-sticky; /* For macOS/iOS Safari */
-  top: 0; /* Sets the sticky toolbar to be on top */
-  z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+  align-items: center;
   min-height: 100px;
+  flex-wrap: wrap;
 }
-.col-inputs {
-
-}
-
-.col-buttons {
-  margin: 10px;
-}
-button {
-  margin: 5px;
+.buttons {
+  min-width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .example-form-field {
   width: 200px;
   padding: 10px;
 }
 
-.container {
+.results {
   display: flex;
   padding: 20px;
   justify-content: center;
   align-items: center;
 }
+
 .col {
-  width: 100%;
+  width: 80%;
 }
 
-.main-color {
+.mat-list-base .mat-list-item{
+  min-height: 46px;
+  height: auto !important;
+}
+
+.att-color {
   color: #FFCC00 ;
   padding-right: 10px;
 }
